@@ -53,7 +53,7 @@ Run standard GP regression on the data.
 
 ```bash
 python train_gp.py --data_path ./dataset/Data_1.csv --kernel matern52 --data volume
-
+```
 
 ### Arguments:
 * '--kernel': Kernel type ('rbf', `matern32`, `matern52`). Default: matern52.
@@ -66,7 +66,7 @@ Train a pure neural network (CNN, RNN, or ANN) for prediction.
 
 ```bash
 python train_nn.py --extractor cnn --data volume --lr 0.001
-
+```
 
 ### Arguments:
 * '--extractor': Model architecture ('cnn', `rnn`, `ann`). Default: 'rnn'.
@@ -79,7 +79,7 @@ Train the Deep Kernel Learning model where a Neural Network acts as a feature ex
 
 ```bash
 python train_stdkgp.py --extractor cnn --kernel rbf --data volume
-
+```
 
 ### Arguments:
 * '--extractor': Model architecture ('cnn', `rnn`, `ann`). Default: 'rnn'.

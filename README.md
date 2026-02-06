@@ -56,7 +56,7 @@ python train_gp.py --data_path ./dataset/Data_1.csv --kernel matern52 --data vol
 ```
 
 ### Arguments:
-* '--kernel': Kernel type ('rbf', `matern32`, `matern52`). Default: matern52.
+* `--kernel`: Kernel type (`rbf`, `matern32`, `matern52`). Default: matern52.
 * `--data`: Type of data to process (`volume`, `speed`). Default: `volume`.
 * `--data_path`: Path to the CSV dataset.
 * `--lr`: Learning rate.
@@ -69,7 +69,7 @@ python train_nn.py --extractor cnn --data volume --lr 0.001
 ```
 
 ### Arguments:
-* '--extractor': Model architecture ('cnn', `rnn`, `ann`). Default: 'rnn'.
+* `--extractor`: Model architecture (`cnn`, `rnn`, `ann`). Default: 'rnn'.
 * `--data`: Type of data to process (`volume`, `speed`). Default: `volume`.
 * `--data_path`: Path to the CSV dataset.
 * `--lr`: Learning rate.
@@ -82,7 +82,7 @@ python train_stdkgp.py --extractor cnn --kernel rbf --data volume
 ```
 
 ### Arguments:
-* '--extractor': Model architecture ('cnn', `rnn`, `ann`). Default: 'rnn'.
+* `--extractor`: Model architecture (`cnn`, `rnn`, `ann`). Default: 'rnn'.
 * `--data`: Type of data to process (`volume`, `speed`). Default: `volume`.
 * `--data_path`: Path to the CSV dataset.
 * `--lr`: Learning rate.
